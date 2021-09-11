@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: turq84/nextjs-netlify-blog-template
+  repo: earner-ai/earner-cms
   branch: master
   open_authoring: true
 media_folder: public/images
