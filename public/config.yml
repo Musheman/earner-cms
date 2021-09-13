@@ -8,41 +8,41 @@ public_folder: /images
 publish_mode: editorial_workflow
 
 collections:
-  - name: 'config'
-    label: 'Config'
-    delete: false
-    editor:
-      preview: false
-    files:
-      - name: 'general'
-        label: 'Site Config'
-        file: 'config.json'
-        description: 'General site settings'
-        fields:
-          - label: 'URL'
-            name: 'base_url'
-            widget: 'string'
-            hint: 'Do not enter the trailing slash of the URL'
-          - label: 'Site title'
-            name: 'site_title'
-            widget: 'string'
-          - label: 'Site description'
-            name: 'site_description'
-            widget: 'string'
-          - label: 'Site keywords'
-            name: 'site_keywords'
-            widget: 'list'
-            summary: '{{fields.keyword.keyword}}'
-            field:
-              label: Keyword
-              name: keyword
-              widget: 'string'
-          - label: 'Twitter account'
-            name: 'twitter_account'
-            widget: 'string'
-          - label: 'GitHub account'
-            name: 'github_account'
-            widget: 'string'
+  # - name: 'config'
+  #   label: 'Config'
+  #   delete: false
+  #   editor:
+  #     preview: false
+  #   files:
+  #     - name: 'general'
+  #       label: 'Site Config'
+  #       file: 'config.json'
+  #       description: 'General site settings'
+  #       fields:
+  #         - label: 'URL'
+  #           name: 'base_url'
+  #           widget: 'string'
+  #           hint: 'Do not enter the trailing slash of the URL'
+  #         - label: 'Site title'
+  #           name: 'site_title'
+  #           widget: 'string'
+  #         - label: 'Site description'
+  #           name: 'site_description'
+  #           widget: 'string'
+  #         - label: 'Site keywords'
+  #           name: 'site_keywords'
+  #           widget: 'list'
+  #           summary: '{{fields.keyword.keyword}}'
+  #           field:
+  #             label: Keyword
+  #             name: keyword
+  #             widget: 'string'
+  #         - label: 'Twitter account'
+  #           name: 'twitter_account'
+  #           widget: 'string'
+  #         - label: 'GitHub account'
+  #           name: 'github_account'
+  #           widget: 'string'
 
   - name: 'meta'
     label: 'Meta'
@@ -90,19 +90,19 @@ collections:
                 widget: 'string'
                 hint: 'Tag name for displaying on the site'
 
-  - name: 'posts'
-    label: 'Posts'
-    folder: 'content/posts/'
+  - name: 'earner blog'
+    label: 'Earner Blog'
+    folder: 'content/blog/'
     extension: 'mdx'
     format: 'frontmatter'
     create: true
-    slug: '{{slug}}'
+    # slug: '{{slug}}'
     identifier_field: slug
     summary: '{{title}}'
     fields:
-      - label: 'Slug'
-        name: 'slug'
-        widget: 'string'
+      # - label: 'Slug'
+      #   name: 'slug'
+      #   widget: 'string'
       - label: 'Title'
         name: 'title'
         widget: 'string'
@@ -122,22 +122,30 @@ collections:
         displayFields:
           - 'authors.*.name'
         valueField: 'authors.*.slug'
-      - label: Tags
-        label_singular: 'Tag'
-        name: 'tags'
-        widget: list
-        summary: '{{fields.tag}}'
+      - label: 'Site keywords'
+        name: 'site_keywords'
+        widget: 'list'
+        summary: '{{fields.keyword.keyword}}'
         field:
-          label: Tag
-          name: tag
-          widget: relation
-          collection: 'meta'
-          file: 'tags'
-          searchFields:
-            - 'tags.*.name'
-          displayFields:
-            - 'tags.*.name'
-          valueField: 'tags.*.slug'
+          label: Keyword
+          name: keyword
+          widget: 'string'
+      # - label: Tags
+      #   label_singular: 'Tag'
+      #   name: 'tags'
+      #   widget: list
+      #   summary: '{{fields.tag}}'
+      #   field:
+      #     label: Tag
+      #     name: tag
+      #     widget: relation
+      #     collection: 'meta'
+      #     file: 'tags'
+      #     searchFields:
+      #       - 'tags.*.name'
+      #     displayFields:
+      #       - 'tags.*.name'
+      #     valueField: 'tags.*.slug'
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
