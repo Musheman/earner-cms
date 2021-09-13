@@ -122,13 +122,13 @@ collections:
         displayFields:
           - 'authors.*.name'
         valueField: 'authors.*.slug'
-      - label: 'Site keywords'
-        name: 'site_keywords'
+      - label: 'Tags'
+        name: 'tags'
         widget: 'list'
-        summary: '{{fields.keyword.keyword}}'
+        summary: '{{fields.tag.tag}}'
         field:
-          label: Keyword
-          name: keyword
+          label: Tag
+          name: tag
           widget: 'string'
       # - label: Tags
       #   label_singular: 'Tag'
