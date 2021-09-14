@@ -122,22 +122,30 @@ collections:
         displayFields:
           - 'authors.*.name'
         valueField: 'authors.*.slug'
-      - label: Tags
-        label_singular: 'Tag'
+      - label: 'Site Tags'
         name: 'tags'
-        widget: list
-        summary: '{{fields.tag}}'
+        widget: 'list'
+        summary: '{{fields.tag.tag}}'
         field:
           label: Tag
           name: tag
-          widget: relation
-          collection: 'meta'
-          file: 'tags'
-          searchFields:
-            - 'tags.*.name'
-          displayFields:
-            - 'tags.*.name'
-          valueField: 'tags.*.slug'
+          widget: 'string'
+      # - label: Tags
+      #   label_singular: 'Tag'
+      #   name: 'tags'
+      #   widget: list
+      #   summary: '{{fields.tag}}'
+      #   field:
+      #     label: Tag
+      #     name: tag
+      #     widget: relation
+      #     collection: 'meta'
+      #     file: 'tags'
+      #     searchFields:
+      #       - 'tags.*.name'
+      #     displayFields:
+      #       - 'tags.*.name'
+      #     valueField: 'tags.*.slug'
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
