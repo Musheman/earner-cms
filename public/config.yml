@@ -89,24 +89,6 @@ collections:
                 name: 'name'
                 widget: 'string'
                 hint: 'Tag name for displaying on the site'
-      - name: 'types'
-        label: 'Info Types'
-        file: 'meta/types.yml'
-        description: 'Helpful Info Types'
-        fields:
-          - name: type
-            label: Info Types
-            label_singular: 'Info Type'
-            widget: list
-            fields:
-              - label: 'Slug'
-                name: 'slug'
-                widget: 'string'
-                hint: 'The part of a URL identifies the tag'
-              - label: 'Display Name'
-                name: 'name'
-                widget: 'string'
-                hint: 'Type: employee, job-seeker, or entrepreneur'
 
   - name: 'blog'
     label: 'Blog'
@@ -186,10 +168,14 @@ collections:
           - label: Link
             name: link
             widget: 'string'
+      - label: 'Category'
+        name: 'category'
+        widget: 'select'
+        options: ['Taxes', 'Contracts']
       - label: 'Info Type'
         name: 'type'
         widget: 'select'
-        options: ['employee', 'job seeker', 'entrepreneur']
+        options: ['Employee', 'Job seeker', 'Entrepreneur']
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
