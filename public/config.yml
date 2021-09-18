@@ -92,7 +92,7 @@ collections:
 
   - name: 'blog'
     label: 'Blog'
-    folder: 'content/posts/'
+    folder: 'content/blog/'
     extension: 'mdx'
     format: 'frontmatter'
     create: true
