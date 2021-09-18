@@ -1,0 +1,7 @@
+type:
+  - name: employee
+    slug: employee
+  - name: job seeker
+    slug: job-seeker
+  - name: entrepreneur
+    slug: entrepreneur

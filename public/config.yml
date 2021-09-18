@@ -137,3 +137,51 @@ collections:
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
+
+  - name: 'helpful info'
+    label: 'Helpful Info'
+    folder: 'content/helpful-info/'
+    extension: 'mdx'
+    format: 'frontmatter'
+    create: true
+    slug: '{{title}}'
+    identifier_field: slug
+    summary: '{{title}}'
+    fields:
+      # - label: 'Slug'
+      #   name: 'slug'
+      #   widget: 'hidden'
+      #   default: title.title
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+        format: 'YYYY-MM-DD'
+        dateFormat: 'YYYY-MM-DD'
+        timeFormat: false
+      - label: 'Sources'
+        name: 'sources'
+        widget: 'list'
+        summary: '{{fields.source.source}}'
+        field:
+          - label: Source name
+            name: sourceName
+            widget: 'string'
+          - label: Link
+            name: link
+            widget: 'string'
+      - label: Information Type
+      name: 'info type'
+      widget: relation
+      collection: 'meta'
+      file: 'helpful-info'
+      searchFields:
+        - 'helpful-info.*.name'
+      displayFields:
+        - 'helpful-info.*.name'
+      valueField: 'helpful-info.*.slug'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
