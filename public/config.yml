@@ -162,12 +162,12 @@ collections:
         widget: 'list'
         summary: '{{fields.source.source}}'
         field:
-          - label: Source name
-            name: source name
-            widget: 'string'
-          - label: Link
-            name: link
-            widget: 'string'
+          label: Source name
+          name: source name
+          widget: 'string'
+          # label: Link
+          # name: link
+          # widget: 'string'
       - label: Information Type
         name: 'info type'
         widget: relation
