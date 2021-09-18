@@ -89,9 +89,9 @@ collections:
                 name: 'name'
                 widget: 'string'
                 hint: 'Tag name for displaying on the site'
-      - name: 'helpful-info'
+      - name: 'types'
         label: 'Info Types'
-        file: 'meta/helpful-info.yml'
+        file: 'meta/types.yml'
         description: 'Helpful Info Types'
         fields:
           - name: type
@@ -187,15 +187,15 @@ collections:
             name: link
             widget: 'string'
       - label: Information Type
-        name: 'info type'
+        name: 'types'
         widget: relation
         collection: 'meta'
-        file: 'helpful-info'
+        file: 'types'
         searchFields:
-          - 'helpful-info.*.name'
+          - 'types.*.name'
         displayFields:
-          - 'helpful-info.*.name'
-        valueField: 'helpful-info.*.slug'
+          - 'types.*.name'
+        valueField: 'types.*.slug'
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
