@@ -167,7 +167,7 @@ collections:
         summary: '{{fields.source.source}}'
         field:
           - label: Source name
-            name: sourceName
+            name: source name
             widget: 'string'
           - label: Link
             name: link
