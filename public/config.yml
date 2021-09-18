@@ -89,6 +89,24 @@ collections:
                 name: 'name'
                 widget: 'string'
                 hint: 'Tag name for displaying on the site'
+      - name: 'helpful info types'
+      label: 'Info Types'
+      file: 'meta/helpful-info.yml'
+      description: 'Helpful Info Types'
+      fields:
+        - name: type
+          label: Info Types
+          label_singular: 'Info Type'
+          widget: list
+          fields:
+            - label: 'Slug'
+              name: 'slug'
+              widget: 'string'
+              hint: 'The part of a URL identifies the tag'
+            - label: 'Display Name'
+              name: 'name'
+              widget: 'string'
+              hint: 'Type: employee, job-seeker, or entrepreneur'
 
   - name: 'blog'
     label: 'Blog'
@@ -161,13 +179,13 @@ collections:
         name: 'sources'
         widget: 'list'
         summary: '{{fields.source.source}}'
-        field:
-          label: Source name
-          name: source name
-          widget: 'string'
-          # label: Link
-          # name: link
-          # widget: 'string'
+        fields:
+          - label: Source name
+            name: source name
+            widget: 'string'
+          - label: Link
+            name: link
+            widget: 'string'
       - label: Information Type
         name: 'info type'
         widget: relation
