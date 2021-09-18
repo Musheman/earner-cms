@@ -90,8 +90,8 @@ collections:
                 widget: 'string'
                 hint: 'Tag name for displaying on the site'
 
-  - name: 'posts'
-    label: 'Posts'
+  - name: 'blog'
+    label: 'Blog'
     folder: 'content/posts/'
     extension: 'mdx'
     format: 'frontmatter'
