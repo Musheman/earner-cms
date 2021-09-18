@@ -123,7 +123,7 @@ collections:
         displayFields:
           - 'authors.*.name'
         valueField: 'authors.*.slug'
-      - label: 'Site Tags'
+      - label: 'Tags'
         name: 'tags'
         widget: 'list'
         summary: '{{fields.tag.tag}}'
