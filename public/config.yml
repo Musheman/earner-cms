@@ -186,22 +186,10 @@ collections:
           - label: Link
             name: link
             widget: 'string'
-      - label: Tags
-        label_singular: 'Tag'
-        name: 'tags'
-        widget: list
-        summary: '{{fields.tag}}'
-        field:
-          label: Tag
-          name: tag
-          widget: relation
-          collection: 'meta'
-          file: 'types'
-          searchFields:
-            - 'types.*.name'
-          displayFields:
-            - 'types.*.name'
-          valueField: 'types.*.slug'
+      - label: 'Info Type'
+        name: 'type'
+        widget: 'select'
+        options: ['employee', 'job seeker', 'entrepreneur']
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
