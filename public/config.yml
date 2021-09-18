@@ -89,7 +89,7 @@ collections:
                 name: 'name'
                 widget: 'string'
                 hint: 'Tag name for displaying on the site'
-      - name: 'helpful info types'
+      - name: 'helpful-info'
         label: 'Info Types'
         file: 'meta/helpful-info.yml'
         description: 'Helpful Info Types'
@@ -156,7 +156,7 @@ collections:
         name: 'body'
         widget: 'markdown'
 
-  - name: 'helpful info'
+  - name: 'helpful-info'
     label: 'Helpful Info'
     folder: 'content/helpful-info/'
     extension: 'mdx'
