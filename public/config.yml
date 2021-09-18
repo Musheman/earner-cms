@@ -96,14 +96,14 @@ collections:
     extension: 'mdx'
     format: 'frontmatter'
     create: true
-    # slug: '{{slug}}'
     slug: '{{title}}'
     identifier_field: slug
-    summary: '{{title}}: {{summary}}'
+    summary: '{{title}}'
     fields:
       - label: 'Slug'
         name: 'slug'
-        # widget: 'string'
+        widget: 'hidden'
+        default: '{{title}}'
       - label: 'Title'
         name: 'title'
         widget: 'string'
@@ -131,22 +131,6 @@ collections:
           label: Tag
           name: tag
           widget: 'string'
-      # - label: Tags
-      #   label_singular: 'Tag'
-      #   name: 'tags'
-      #   widget: list
-      #   summary: '{{fields.tag}}'
-      #   field:
-      #     label: Tag
-      #     name: tag
-      #     widget: relation
-      #     collection: 'meta'
-      #     file: 'tags'
-      #     searchFields:
-      #       - 'tags.*.name'
-      #     displayFields:
-      #       - 'tags.*.name'
-      #     valueField: 'tags.*.slug'
       - label: 'Brief Summary'
         name: 'summary'
         widget: 'markdown'
