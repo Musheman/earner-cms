@@ -90,23 +90,23 @@ collections:
                 widget: 'string'
                 hint: 'Tag name for displaying on the site'
       - name: 'helpful info types'
-      label: 'Info Types'
-      file: 'meta/helpful-info.yml'
-      description: 'Helpful Info Types'
-      fields:
-        - name: type
-          label: Info Types
-          label_singular: 'Info Type'
-          widget: list
-          fields:
-            - label: 'Slug'
-              name: 'slug'
-              widget: 'string'
-              hint: 'The part of a URL identifies the tag'
-            - label: 'Display Name'
-              name: 'name'
-              widget: 'string'
-              hint: 'Type: employee, job-seeker, or entrepreneur'
+        label: 'Info Types'
+        file: 'meta/helpful-info.yml'
+        description: 'Helpful Info Types'
+        fields:
+          - name: type
+            label: Info Types
+            label_singular: 'Info Type'
+            widget: list
+            fields:
+              - label: 'Slug'
+                name: 'slug'
+                widget: 'string'
+                hint: 'The part of a URL identifies the tag'
+              - label: 'Display Name'
+                name: 'name'
+                widget: 'string'
+                hint: 'Type: employee, job-seeker, or entrepreneur'
 
   - name: 'blog'
     label: 'Blog'
