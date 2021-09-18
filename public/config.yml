@@ -138,7 +138,7 @@ collections:
         name: 'body'
         widget: 'markdown'
 
-  - name: 'helpful info'
+  - name: 'helpful-info'
     label: 'Helpful Info'
     folder: 'content/helpful-info/'
     extension: 'mdx'
