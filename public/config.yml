@@ -175,12 +175,12 @@ collections:
         format: 'YYYY-MM-DD'
         dateFormat: 'YYYY-MM-DD'
         timeFormat: false
-      - label: 'Info Type'
+      - label: 'Helpful Info Type'
         name: 'type'
         widget: 'select'
         options: ['Employee', 'Job seeker', 'Entrepreneur']
-      - label: 'Types'
-        name: 'types'
+      - label: 'Category'
+        name: 'category'
         widget: 'relation'
         multiple: true
         min: 1
@@ -204,6 +204,6 @@ collections:
       - label: 'Brief Summary'
         name: 'summary'
         widget: 'text'
-      - label: 'Body'
-        name: 'body'
+      - label: 'Content'
+        name: 'content'
         widget: 'markdown'
