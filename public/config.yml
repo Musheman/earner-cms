@@ -76,6 +76,7 @@ collections:
               - label: 'Personal website (optional)'
                 name: 'website'
                 widget: 'string'
+                required: false
                 hint: 'Share your personal website with the community.'
               - label: 'Introduction'
                 name: 'introduction'
