@@ -49,6 +49,7 @@ collections:
     delete: false
     editor:
       preview: false
+    slug: '{{slug}}'
     files:
       - name: 'authors'
         label: 'Authors'
@@ -69,11 +70,11 @@ collections:
                 widget: 'string'
                 hint: 'Use this format: firstname-lastname. Remember to include the dash between your first and last name.'
               - label: 'Name'
-                name: 'name'
+                name: 'authorName'
                 widget: 'string'
                 hint: 'First and last name.'
               - label: 'Personal website (optional)'
-                name: 'name'
+                name: 'website'
                 widget: 'string'
                 hint: 'Share your personal website with the community.'
               - label: 'Introduction'
