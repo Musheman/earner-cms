@@ -201,10 +201,27 @@ collections:
       - label: 'Types'
         name: 'types'
         widget: 'relation'
-        collection: 'types'
-        search_fields: ['types.name']
-        value_field: '{{slug}}'
-        display_fields: ['{{name}}']
+        collection: 'meta'
+        file: 'types'
+        search_fields: ['types.*.name']
+        value_field: 'types.*.slug'
+        display_fields: ['types.*.name']
+      # - label: Types
+      #   label_singular: 'Type'
+      #   name: 'types'
+      #   widget: list
+      #   summary: '{{fields.type}}'
+      #   field:
+      #     label: Type
+      #     name: type
+      #     widget: relation
+      #     collection: 'meta'
+      #     file: 'types'
+      #     searchFields:
+      #       - 'types.*.name'
+      #     displayFields:
+      #       - 'types.*.name'
+      #     valueField: 'types.*.slug'
       - label: 'Sources'
         name: 'sources'
         widget: 'list'
