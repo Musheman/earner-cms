@@ -193,6 +193,7 @@ collections:
       - label: 'Sources'
         name: 'sources'
         widget: 'list'
+        required: true
         summary: '{{fields.source.source}}'
         fields:
           - label: Source name
