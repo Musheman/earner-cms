@@ -3,6 +3,10 @@ authors:
     name: Takahiro Fujiwara
     introduction: Co-founder and CTO at Fuller, Inc. / Software & Data Engineer /
       Python / Golang / React
+    featuredimage: /images/blank.png
+    authorName: John Doe
   - slug: kayla-gordon
     name: Kayla Gordon
     introduction: Here is my introduction.
+    featuredimage: /images/blank.png
+    authorName: Kayla Gordon
