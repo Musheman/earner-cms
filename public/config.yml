@@ -5,7 +5,8 @@ backend:
   open_authoring: true
 media_folder: public/images
 public_folder: /images
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
+publish: false
 
 collections:
   # - name: 'config'
@@ -113,7 +114,7 @@ collections:
     folder: 'content/blog/'
     extension: 'mdx'
     format: 'frontmatter'
-    create: false
+    create: true
     slug: '{{title}}'
     identifier_field: slug
     summary: '{{title}}'
