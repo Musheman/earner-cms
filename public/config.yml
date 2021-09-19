@@ -89,6 +89,24 @@ collections:
                 name: 'name'
                 widget: 'string'
                 hint: 'Tag name for displaying on the site'
+      - name: 'types'
+        label: 'Types'
+        file: 'meta/types.yml'
+        description: 'List of types'
+        fields:
+          - name: types
+            label: Types
+            label_singular: 'Type'
+            widget: list
+            fields:
+              - label: 'Slug'
+                name: 'slug'
+                widget: 'string'
+                hint: 'The part of a URL identifies the types'
+              - label: 'Display Name'
+                name: 'name'
+                widget: 'string'
+                hint: 'Tag name for displaying on the site'
 
   - name: 'blog'
     label: 'Blog'
@@ -161,25 +179,32 @@ collections:
         name: 'type'
         widget: 'select'
         options: ['Employee', 'Job seeker', 'Entrepreneur']
-      - label: 'Category'
-        name: 'category'
-        widget: 'select'
-        options:
-          [
-            'Contracts',
-            'Entrepreneurship',
-            'Funding',
-            'Kela',
-            'Labour union',
-            'Leaving your job',
-            'Networking',
-            'New employment',
-            'Salary',
-            'Unemployment',
-            'Unemployment benefits',
-            'Unemployment fund',
-            'Taxes (Vero)',
-          ]
+      # - label: 'Category'
+      #   name: 'category'
+      #   widget: 'select'
+      #   options:
+      #     [
+      #       'Contracts',
+      #       'Entrepreneurship',
+      #       'Funding',
+      #       'Kela',
+      #       'Labour union',
+      #       'Leaving your job',
+      #       'Networking',
+      #       'New employment',
+      #       'Salary',
+      #       'Unemployment',
+      #       'Unemployment benefits',
+      #       'Unemployment fund',
+      #       'Taxes (Vero)',
+      #     ]
+      - label: 'Types'
+        name: 'types'
+        widget: 'relation'
+        collection: 'meta/types'
+        search_fields: ['types.name']
+        value_field: '{{slug}}'
+        display_fields: ['{{name}}']
       - label: 'Sources'
         name: 'sources'
         widget: 'list'
@@ -193,7 +218,7 @@ collections:
             widget: 'string'
       - label: 'Brief Summary'
         name: 'summary'
-        widget: 'markdown'
+        widget: 'text'
       - label: 'Body'
         name: 'body'
         widget: 'markdown'

@@ -1,0 +1,23 @@
+types:
+  - slug: contracts
+    name: Contracts
+  - slug: entrepreneurship
+    name: Entrepreneurship
+  - slug: funding
+    name: Funding
+  - slug: kela
+    name: Kela
+  - slug: labour-union
+    name: Labour union
+  - slug: leaving-your-job
+    name: Leaving your job
+  - slug: networking
+    name: Networking
+  - slug: unemployment
+    name: Unemployment
+  - slug: unemployment-benefits
+    name: Unemployment benefits
+  - slug: unemployment-fund
+    name: Unemployment fund
+  - slug: taxes
+    name: Taxes (Vero)
