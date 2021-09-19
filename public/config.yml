@@ -2,7 +2,7 @@ backend:
   name: github
   repo: earner-ai/earner-cms
   branch: master
-  open_authoring: true
+  open_authoring: false
 media_folder: public/images
 public_folder: /images
 # publish_mode: editorial_workflow
