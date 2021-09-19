@@ -179,49 +179,17 @@ collections:
         name: 'type'
         widget: 'select'
         options: ['Employee', 'Job seeker', 'Entrepreneur']
-      # - label: 'Category'
-      #   name: 'category'
-      #   widget: 'select'
-      #   options:
-      #     [
-      #       'Contracts',
-      #       'Entrepreneurship',
-      #       'Funding',
-      #       'Kela',
-      #       'Labour union',
-      #       'Leaving your job',
-      #       'Networking',
-      #       'New employment',
-      #       'Salary',
-      #       'Unemployment',
-      #       'Unemployment benefits',
-      #       'Unemployment fund',
-      #       'Taxes (Vero)',
-      #     ]
       - label: 'Types'
         name: 'types'
         widget: 'relation'
+        multiple: true
+        min: 1
+        max: 3
         collection: 'meta'
         file: 'types'
         search_fields: ['types.*.name']
         value_field: 'types.*.slug'
         display_fields: ['types.*.name']
-      # - label: Types
-      #   label_singular: 'Type'
-      #   name: 'types'
-      #   widget: list
-      #   summary: '{{fields.type}}'
-      #   field:
-      #     label: Type
-      #     name: type
-      #     widget: relation
-      #     collection: 'meta'
-      #     file: 'types'
-      #     searchFields:
-      #       - 'types.*.name'
-      #     displayFields:
-      #       - 'types.*.name'
-      #     valueField: 'types.*.slug'
       - label: 'Sources'
         name: 'sources'
         widget: 'list'
