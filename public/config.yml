@@ -61,14 +61,14 @@ collections:
             label_singular: 'Author'
             widget: list
             fields:
-              - label: 'Profile picture'
-                name: 'featuredimage'
-                widget: image
-                default: '/images/blank.png'
               - label: 'Name'
                 name: 'authorName'
                 widget: 'string'
                 hint: 'First and last name.'
+              - label: 'Profile picture'
+                name: 'featuredimage'
+                widget: image
+                default: '/images/blank.png'
               - label: 'Personal website'
                 name: 'website'
                 widget: 'string'
