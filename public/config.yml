@@ -64,16 +64,12 @@ collections:
               - label: 'Profile picture'
                 name: 'featuredimage'
                 widget: image
-                default: 'blank.png'
-              # - label: 'Slug'
-              #   name: 'slug'
-              #   widget: 'string'
-              #   hint: 'Use this format: firstname-lastname. Remember to include the dash between your first and last name.'
+                default: '/images/blank.png'
               - label: 'Name'
                 name: 'authorName'
                 widget: 'string'
                 hint: 'First and last name.'
-              - label: 'Personal website (optional)'
+              - label: 'Personal website'
                 name: 'website'
                 widget: 'string'
                 required: false
