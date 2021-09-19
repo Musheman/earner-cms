@@ -164,7 +164,22 @@ collections:
       - label: 'Category'
         name: 'category'
         widget: 'select'
-        options: ['Taxes', 'Contracts']
+        options:
+          [
+            'Contracts',
+            'Entrepreneurship',
+            'Funding',
+            'Kela',
+            'Labour union',
+            'Leaving your job',
+            'Networking',
+            'New employment',
+            'Salary',
+            'Unemployment',
+            'Unemployment benefits',
+            'Unemployment fund',
+            'Taxes (Vero)',
+          ]
       - label: 'Sources'
         name: 'sources'
         widget: 'list'
@@ -176,6 +191,9 @@ collections:
           - label: Link
             name: link
             widget: 'string'
+      - label: 'Brief Summary'
+        name: 'summary'
+        widget: 'markdown'
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
