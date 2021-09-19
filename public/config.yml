@@ -121,7 +121,7 @@ collections:
       - label: 'Slug'
         name: 'slug'
         widget: 'hidden'
-        default: '{{fields.title}}'
+        default: 'fields.*.title'
       - label: 'Title'
         name: 'title'
         widget: 'string'
