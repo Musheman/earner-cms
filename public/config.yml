@@ -113,7 +113,7 @@ collections:
     folder: 'content/blog/'
     extension: 'mdx'
     format: 'frontmatter'
-    create: true
+    create: false
     slug: '{{title}}'
     identifier_field: slug
     summary: '{{title}}'
